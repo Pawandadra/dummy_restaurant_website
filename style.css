@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Navigation bar */
+#navbar{
+    background-image: url("/img/nav_back.jpg");
+    background-size : 100% ;
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    /* justify-content: center; */
+}
+
+#logo {
+    display: flex;
+}
+
+#logo img{
+    margin: 1.5rem 1.5rem ;
+    height: 8rem;
+    width: 8rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    padding: 3rem;
+
+}
+#navbar ul li a{
+    font-family: "Playwrite NG Modern", cursive;
+    display: block;
+    color : rgb(184, 158, 13);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a:active{
+    color : rgb(240, 207, 20);
+    text-decoration: underline;
+}
