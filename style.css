@@ -5,46 +5,209 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/* Global Variables  */
+:root {
+    --border-radius: 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-heading {
+    font-size: 5rem;
+    color: rgb(255, 188, 63);
+    text-shadow: 0.2rem 0.2rem 0.3rem rgb(8, 8, 8);
+    padding: 2rem;
+}
+
+.secondry-heading{
+    padding: 1rem;
+    font-size:1.7rem;
+}
+
+.justify{
+    text-align: justify;
+}
+.rinzerio  {
+    font-weight: bold;
+}
+.container {
+    width: 100%;
+    height: 800px;
+}
+
+.container #random_bg {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    z-index: -5;
+    opacity: 70%;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
 /* Navigation bar */
-#navbar{
-    background-image: url("/img/nav_back.jpg");
-    background-size : 100% ;
+#navbar {
+    border-radius: var(--border-radius);
+    background: url("/img/nav_back1.jpg") no-repeat center center/cover;
+    background-size: 100%;
     display: flex;
     align-items: center;
     height: 8rem;
+    opacity: 95%;
+    width: 100%;
     /* justify-content: center; */
 }
 
+/* logo */
 #logo {
     display: flex;
 }
 
-#logo img{
-    margin: 1.5rem 1.5rem ;
+#logo img {
+    margin: 1.5rem 1.5rem;
     height: 8rem;
     width: 8rem;
+    opacity: 85%;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
 }
 
-#navbar ul li{
+/* navigation menus  */
+#navbar ul li {
     padding: 3rem;
-
 }
-#navbar ul li a{
+
+#navbar ul li a {
     font-family: "Playwrite NG Modern", cursive;
     display: block;
-    color : rgb(184, 158, 13);
+    color: rgb(240, 224, 132);
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
 }
 
 #navbar ul li a:hover,
-#navbar ul li a:active{
-    color : rgb(240, 207, 20);
-    text-decoration: underline;
+#navbar ul li a:active {
+    text-shadow: 0px 0px 5px;
+}
+
+/* home section */
+#home {
+    flex-direction: column;
+    padding: 80px 300px;
+    color: wheat;
+}
+
+
+/* Order Now button  */
+#ordernow {
+    font-family: "Playwrite NG Modern", cursive;
+    position: fixed;
+    bottom: 2rem;
+    right: -10px;
+    height: 4rem;
+    width: 11rem;
+    font-size: 1.2rem;
+    color: wheat;
+    border: 1px outset black;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background-color: rgba(0, 0, 0, 0.767);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px;
+}
+
+#ordernow:hover {
+    background-color: rgba(0, 0, 0, 0.781);
+    color: rgb(177, 142, 79);
+}
+
+.home-content {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.box #dine-in,
+.box #take-away,
+.box #home-delivery {
+    background-color: rgba(245, 222, 179, 0.308);
+    border: 2px solid black;
+    border-radius: var(--border-radius);
+    margin: 2rem;
+    width: 18rem;
+    height: 24rem;
+    padding: 2rem;
+}
+
+#services #dine-in img,
+#services #take-away img,
+#services #home-delivery img {
+    height: 6rem;
+    width: 7rem;
+    display: block;
+    margin: auto;
+}
+
+.menu-image{
+    display: inline-block;
+    width : 29rem;
+    padding : 0.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.menu-image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 80px rgb(240, 224, 132);
+}
+
+#contactUs{
+    background-color: rgb(17, 17, 17);
+    border-radius: var(--border-radius);
+}
+footer{
+    background-color: black;
+    color :rgb(240, 224, 132);
+    font-size: larger;
+}
+.contact #name,
+.contact #email{ 
+    height: 2rem;
+    width : 50.3rem;
+}
+.contact #name,
+.contact #email,
+.contact #suggestion,
+.contact #submit,
+.contact #reset{
+    font-family: "Playwrite NG Modern", cursive;
+    color :rgb(240, 224, 132);
+    margin: 1rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgb(240, 224, 132);
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px;
+}
+/* .contact #suggestion{
+    margin-bottom: 2rem;
+} */
+ .contact #reset,
+ .contact #submit {
+    padding: 10px;
+    display: inline-block;
+    width : 24.1rem;
 }

@@ -4,37 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIMBERIO - Food Hub</title>
+    <title>RINZERIO - Food Hub</title>  <!--   Title   -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900 display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900 display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-<!-- Navigation Bar -->
-        <nav id="navbar">
-            <!-- Main logo -->
-            <div id="logo">
-                <img src="/img/Logo.png" alt="RIMBERIO">
-            </div>
-            <ul>
-                <!-- Navigation menus -->
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">Menu</a></li>
-                <li class="item"><a href="#">Services</a></li>
-                <li class="item"><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- Home section -->
-    <!-- <section id="home">
-        <h1>Welcome to RINZERIO</h1>
-    </section> -->
-</body>
+    <div class="container">
+        <!-- random backgrounds -->
+        <div id="random_bg"></div>
+        <script src="random_bg.js"></script>
+        <header>
 
+            <!-- Navigation Bar -->
+            <nav id="navbar">
+
+                <!-- Main logo -->
+                <div id="logo">
+                    <img src="/img/Logo.png" alt="RIMBERIO">
+                </div>
+
+                <ul>
+                    <!-- Navigation menus -->
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#">Menu</a></li>
+                    <li class="item"><a href="#">Services</a></li>
+                    <li class="item"><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Order Now Button at bottom-right  -->
+        <button id="ordernow">Order Now</button>
+
+        <!-- Home section -->
+        <section id="home" class = "flex">
+            <h1 class="primary-heading flex">Welcome to RINZERIO</h1>
+            <p class="home-content justify"> Welcome to <span class = "rinzerio">RINZERIO</span>, the pinnacle of culinary excellence since 2022. Our restaurant
+                offers a warm, inviting atmosphere where friends and families can enjoy memorable meals. We pride
+                ourselves on our diverse menu, crafted with the finest ingredients to tantalize your taste buds.At
+                <span class = "rinzerio">RINZERIO</span>, we cater to all your dining needs. Enjoy our cozy dine-in service, prompt home delivery, or
+                convenient take-away options. Whether you prefer the comfort of your home or the ambiance of our
+                restaurant, every dish is prepared with care and quality.</p>
+            <p class="home-content">Discover why <span class = "rinzerio">RINZERIO</span> is the best restaurant in town. We look forward to serving
+                you.</p>
+        </section>
+    </div>
+    <section id="menu">
+        <h2 class = "primary-heading flex">MENU</h2>
+        <div>
+            <img src="/img/menu/Menu1.png" alt="Menu" class = "menu-image">
+            <img src="/img/menu/Menu2.png" alt="Menu" class = "menu-image">
+            <img src="/img/menu/Menu3.png" alt="Menu" class = "menu-image">
+            <img src="/img/menu/Menu4.png" alt="Menu" class = "menu-image">
+        </div>
+    </section>
+    <section id="services">
+        <h2 class = "primary-heading flex">Our Services</h2>
+        <div class="box flex">
+            <div id="dine-in">
+                <img src="/img/dine in.png" alt="dine-in">
+                <h3 class = "secondry-heading flex">Dine-In</h3>
+                <p class = "justify">Indulge in an exceptional dining experience at <span class = "rinzerio">RINZERIO</span>. Our elegant and inviting atmosphere, combined with attentive service, ensures every meal is memorable. Explore our diverse menu, meticulously crafted with the finest ingredients, and embark on a delightful culinary journey. Join us for an unforgettable dining experience that tantalizes your taste buds.</p>
+            </div>
+            <div id="take-away">
+                <img src="/img/take-away.png" alt="take-away">
+                <h3 class = "secondry-heading flex">Take-Away</h3>
+                <p class = "justify">Experience the convenience of <span class = "rinzerio">RINZERIO</span>'s efficient take-away service. Perfect for those on the move, our take-away option allows you to enjoy our exquisite cuisine at your convenience. Each dish is prepared with the same dedication and quality as our dine-in offerings, ensuring a satisfying and delicious meal wherever you choose to enjoy it.</p>
+            </div>
+            <div id="home-delivery">
+                <img src="/img/delivery.png" alt="home-delivery">
+                <h3 class = "secondry-heading flex">Home Delivery</h3>
+                <p class = "justify">Enjoy the gourmet flavors of <span class = "rinzerio">RINZERIO</span> from the comfort of your home with our efficient home delivery service. With just a few clicks or a phone call, savor restaurant-quality dishes delivered hot and fresh to your doorstep. Relish the luxury of fine dining without leaving your home. Our reliable service guarantees timely delivery for an exceptional experience.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactUs">
+        <h2 class = "primary-heading flex">Contact Us</h2>
+        <div id="form" class = " contact flex">
+            <form action="">
+                    <input type="text" id = "name" placeholder="Enter your name"><br>
+                    <input type="email" id = "email" placeholder = "Enter your mail id"><br>
+                    <textarea name="message" cols= 88 rows=8 id="suggestion" placeholder="Suggestions"></textarea><br>
+                    <input type="reset" value="Reset Now" id = "reset">
+                    <input type="submit" value="Submit Now" id = "submit">
+            </form>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="flex">
+            Copyright &copy rinzeriofoodhub.com All rights reserved!
+        </div>
+    </footer>
+</body>
 </html>
