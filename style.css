@@ -5,6 +5,9 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+body{
+    background-color: rgb(34, 32, 32);
+}
 
 /* Global Variables  */
 :root {
@@ -35,15 +38,12 @@
 .rinzerio  {
     font-weight: bold;
 }
-.container {
-    width: 100%;
-    height: 800px;
-}
 
-.container #random_bg {
+/* Random Backgrounds  */
+#random_bg {
     position: absolute;
     width: 100%;
-    height: 75%;
+    height: 46rem;
     background-size: cover;
     background-position: center;
     z-index: -5;
@@ -52,8 +52,20 @@
     border-bottom-right-radius: var(--border-radius);
 }
 
+.home-container {
+    width: 100%;
+    height: 38rem;
+}
+
+/* To make navigation bar sticky  */
+header{
+    position: sticky;
+    top: 0;
+}
 /* Navigation bar */
 #navbar {
+    position:sticky;
+    top: 0;
     border-radius: var(--border-radius);
     background: url("/img/nav_back1.jpg") no-repeat center center/cover;
     background-size: 100%;
@@ -104,8 +116,10 @@ ul {
 /* home section */
 #home {
     flex-direction: column;
-    padding: 80px 300px;
+    padding: 1rem 15rem;
     color: wheat;
+    height: 30rem;
+    text-align: center;
 }
 
 
@@ -137,8 +151,36 @@ ul {
     font-weight: 600;
     font-family: "Barlow Condensed", sans-serif;
     text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+ 
+.menu-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
+.menu_images{
+    flex-wrap: wrap;
+}
+.menu-image{
+    display: flex;
+    width : 29rem;
+    padding : 0.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#menu1,
+#menu2,
+#menu3,
+#menu4{
+    display: flex;
+    width: 25rem;
+    margin: 2rem;
+}
+.menu-image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 100px rgb(240, 224, 132);
+}
 .box #dine-in,
 .box #take-away,
 .box #home-delivery {
@@ -160,17 +202,6 @@ ul {
     margin: auto;
 }
 
-.menu-image{
-    display: inline-block;
-    width : 29rem;
-    padding : 0.2rem;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-.menu-image:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 80px rgb(240, 224, 132);
-}
 
 #contactUs{
     background-color: rgb(17, 17, 17);

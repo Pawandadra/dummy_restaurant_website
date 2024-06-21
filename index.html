@@ -18,12 +18,10 @@
 </head>
 
 <body>
-    <div class="container">
         <!-- random backgrounds -->
         <div id="random_bg"></div>
         <script src="random_bg.js"></script>
         <header>
-
             <!-- Navigation Bar -->
             <nav id="navbar">
 
@@ -34,8 +32,8 @@
 
                 <ul>
                     <!-- Navigation menus -->
-                    <li class="item"><a href="#">Home</a></li>
-                    <li class="item"><a href="#">Menu</a></li>
+                    <li class="item"><a href="#home">Home</a></li>
+                    <li class="item"><a href="#menu">Menu</a></li>
                     <li class="item"><a href="#">Services</a></li>
                     <li class="item"><a href="#">Contact Us</a></li>
                 </ul>
@@ -44,29 +42,35 @@
 
         <!-- Order Now Button at bottom-right  -->
         <button id="ordernow">Order Now</button>
-
-        <!-- Home section -->
-        <section id="home" class = "flex">
-            <h1 class="primary-heading flex">Welcome to RINZERIO</h1>
-            <p class="home-content justify"> Welcome to <span class = "rinzerio">RINZERIO</span>, the pinnacle of culinary excellence since 2022. Our restaurant
-                offers a warm, inviting atmosphere where friends and families can enjoy memorable meals. We pride
-                ourselves on our diverse menu, crafted with the finest ingredients to tantalize your taste buds.At
-                <span class = "rinzerio">RINZERIO</span>, we cater to all your dining needs. Enjoy our cozy dine-in service, prompt home delivery, or
-                convenient take-away options. Whether you prefer the comfort of your home or the ambiance of our
-                restaurant, every dish is prepared with care and quality.</p>
-            <p class="home-content">Discover why <span class = "rinzerio">RINZERIO</span> is the best restaurant in town. We look forward to serving
-                you.</p>
-        </section>
-    </div>
-    <section id="menu">
-        <h2 class = "primary-heading flex">MENU</h2>
-        <div>
-            <img src="/img/menu/Menu1.png" alt="Menu" class = "menu-image">
-            <img src="/img/menu/Menu2.png" alt="Menu" class = "menu-image">
-            <img src="/img/menu/Menu3.png" alt="Menu" class = "menu-image">
-            <img src="/img/menu/Menu4.png" alt="Menu" class = "menu-image">
+        <div class="home-container">
+            <!-- Home section -->
+            <section id="home" class="flex">
+                <h1 class="primary-heading flex">Welcome to RINZERIO</h1>
+                <p class="home-content justify"> Welcome to <span class="rinzerio">RINZERIO</span>, the pinnacle of culinary
+                    excellence since 2022. Our restaurant
+                    offers a warm, inviting atmosphere where friends and families can enjoy memorable meals. We pride
+                    ourselves on our diverse menu, crafted with the finest ingredients to tantalize your taste buds.At
+                    <span class="rinzerio">RINZERIO</span>, we cater to all your dining needs. Enjoy our cozy dine-in service,
+                    prompt home delivery, or
+                    convenient take-away options. Whether you prefer the comfort of your home or the ambiance of our
+                    restaurant, every dish is prepared with care and quality.
+                </p>
+                <p class="home-content">Discover why <span class="rinzerio">RINZERIO</span> is the best restaurant in town. We
+                    look forward to serving
+                    you.</p>
+            </section>
         </div>
-    </section>
+        <div class="menu-container">
+            <section id="menu">
+                <h2 class="primary-heading flex">MENU</h2>
+                <div class="menu_images flex">
+                    <img src="/img/menu/Menu1.png" alt="Menu" class="menu-image" id="menu1">
+                    <img src="/img/menu/Menu2.png" alt="Menu" class="menu-image" id="menu2">
+                    <img src="/img/menu/Menu3.png" alt="Menu" class="menu-image" id="menu3">
+                    <img src="/img/menu/Menu4.png" alt="Menu" class="menu-image" id="menu4">
+                </div>
+            </section>
+        </div>
     <section id="services">
         <h2 class = "primary-heading flex">Our Services</h2>
         <div class="box flex">
