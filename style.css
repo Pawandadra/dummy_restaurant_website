@@ -243,22 +243,11 @@ ul {
     box-shadow: 0px 0px 5px;
 }
 
-/* .contact #suggestion{
-    margin-bottom: 2rem;
-} */
 .contact #reset,
 .contact #submit {
     padding: 10px;
     display: inline-block;
     width: 24.1rem;
-}
-
-
-/* Copyright footer */
-footer {
-    background-color: black;
-    color: rgb(240, 224, 132);
-    font-size: larger;
 }
 
 /* Order Now button at bottom right fixed position */
@@ -285,6 +274,12 @@ footer {
     color: rgb(177, 142, 79);
 }
 
+/* Copyright footer */
+footer {
+    background-color: black;
+    color: rgb(240, 224, 132);
+    font-size: larger;
+}
 
 /* for PC and laptop displays */
 @media only screen and (min-width: 1300px) and (max-width: 1880px){
@@ -337,8 +332,8 @@ footer {
     #menu2,
     #menu3,
     #menu4 {
-        width: 19rem;
-        margin: 0.5rem;   
+        width: 18.5rem;
+        margin: 0.45rem;   
     }
 
     .menu-image {
@@ -359,7 +354,7 @@ footer {
         padding: 1.3rem;
     }
 
-
+/* Contact Section */
     .contact #name,
     .contact #email,
     .contact #suggestion,
@@ -372,28 +367,28 @@ footer {
         height: 10rem;
     }
 }
-/*
-For big tablets and small screens
-@media only screen and (max-width: 1300px){
+
+/* For big tablets and small screens */
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
    
     html {
         scroll-padding-top: 6rem;
     }
 
     /* logo image  */
-    /* #logo img {
+    #logo img {
         height: 6rem;
         width: 6rem;
-    } */
+    }
 
 /* navigation bar */
-    /* #navbar {
+    #navbar {
         border-radius: 1rem;
         height: 6rem;
-    } */
+    }
     
 /* Home Section */
-    /* .home-container {
+    .home-container {
         height: 34rem;
     }
 
@@ -412,10 +407,10 @@ For big tablets and small screens
     .primary-heading {
         font-size: 3.5rem;
         padding: 1.5rem;
-    } */
+    }
     
 /* Menu Section */
-    /* .menu_images {
+    .menu_images {
         grid-template-columns: repeat(2, auto);
         gap: 0.4rem;
     }  
@@ -426,15 +421,15 @@ For big tablets and small screens
     #menu4 {
         width: 25rem;
         margin: 1rem;   
-    } */
+    }
         
 /* Services section */        
-    /* .box #dine-in,
+    .box #dine-in,
     .box #take-away,
     .box #home-delivery {
         margin: 1rem;
         width: 19rem;
-        height: 23rem;
+        height: 24rem;
         padding: 1.3rem;
     }
 
@@ -450,4 +445,680 @@ For big tablets and small screens
     .contact #suggestion{
         height: 10rem;
     }
-} */
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+   
+    html {
+        scroll-padding-top: 6rem;
+    }
+
+    /* logo image  */
+    #logo img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+/* navigation bar */
+    #navbar {
+        border-radius: 1rem;
+        height: 6rem;
+    }
+    
+/* Home Section */
+    .home-container {
+        height: 34rem;
+    }
+
+    #home {
+        padding: 0.8rem 13rem;
+        height: 26rem;
+    }
+    
+    .home-content {
+        font-size: 1.15rem;
+    }
+
+    #random_bg {
+        height: 40rem;
+    }
+    .primary-heading {
+        font-size: 3.3rem;
+        padding: 1.3rem;
+    }
+    
+/* Menu Section */
+    .menu_images {
+        grid-template-columns: repeat(2, auto);
+        gap: 0.4rem;
+    }  
+    
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        width: 22rem;
+        margin: 1rem;   
+    }
+
+    .menu-image {
+        transition: all 0.7s ease-in-out;
+    }
+
+    .menu-image:hover {
+        transform: scale(1.3);
+    }
+        
+/* Services section */  
+    .secondry-heading {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .box #dine-in,
+    .box #take-away,
+    .box #home-delivery {
+        margin: 1rem;
+        width: 19rem;
+        height: 24rem;
+        padding: 1.3rem;
+    }
+
+    #services{
+        font-size: 0.95rem;
+    }
+    .contact #name,
+    .contact #email,
+    .contact #suggestion,
+    .contact #submit,
+    .contact #reset {
+        margin: 0.9rem;
+    }
+
+    .contact #suggestion{
+        height: 8rem;
+    }
+
+    .contact #reset,
+    .contact #submit {
+        padding: 8px;
+        display: inline-block;
+        width: 24.1rem;
+    }
+
+/* Order Now button */
+     #ordernow {
+        position: fixed;
+        bottom: 1.5rem;
+        right: -10px;
+        height: 2.5rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1000px){
+   
+    html {
+        scroll-padding-top: 6rem;
+    }
+
+    /* logo image  */
+    #logo img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+/* navigation bar */
+    #navbar {
+        border-radius: 1rem;
+        height: 5rem;
+    }
+
+    #navbar ul li a {
+        font-size: 1.36rem;
+    }
+    
+/* Home Section */
+    .home-container {
+        height: 32rem;
+    }
+
+    #home {
+        padding: 0.8rem 13rem;
+        height: 23rem;
+    }
+    
+    .home-content {
+        font-size: 1rem;
+    }
+
+    #random_bg {
+        height: 37rem;
+    }
+    .primary-heading {
+        font-size: 3rem;
+        padding: 1.3rem;
+    }
+    
+/* Menu Section */
+
+    .menu_images {
+        grid-template-columns: repeat(2, auto);
+        gap: 0.4rem;
+    }  
+    
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        width: 18rem;
+        margin: 1rem;   
+    }
+
+/* Services section */  
+
+    .secondry-heading {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .box #dine-in,
+    .box #take-away,
+    .box #home-delivery {
+        margin: 0.5rem;
+        width: 19rem;
+        height: 24rem;
+        padding: 1.3rem;
+    }
+
+    #services #dine-in img,
+    #services #take-away img,
+    #services #home-delivery img {
+    height: 5rem;
+    width: 6rem;
+    }
+
+    #services{
+        font-size: 0.9rem;
+    }
+/* Contact Us Section  */
+    .contact #name,
+    .contact #email {
+        height: 1.7rem;
+        width: 40rem;
+    }
+
+    .contact #name,
+    .contact #email,
+    .contact #suggestion,
+    .contact #submit,
+    .contact #reset {
+        margin: 0.5rem;
+    }
+
+    .contact #suggestion{
+        width: 40rem;
+        height: 8rem;
+    }
+
+    .contact #reset,
+    .contact #submit {
+        padding: 7px;
+        display: inline-block;
+        width: 19.5rem;
+    }
+
+    /* Order Now button */
+    #ordernow {
+        position: fixed;
+        bottom: 1.5rem;
+        right: -10px;
+        height: 2.5rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (min-width: 570px) and (max-width: 860px){
+   
+    html {
+        scroll-padding-top: 4rem;
+    }
+
+/* logo image  */
+    #logo img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+/* navigation bar */
+    #navbar {
+        border-radius: 1rem;
+        height: 4rem;
+    }
+
+    #navbar ul li {
+        padding: 1.3rem;
+    }
+
+    #navbar ul li a {
+        font-size: 0.8rem;
+    }
+    
+/* Home Section */
+    .home-container {
+        height: 18rem;
+    }
+
+    #home {
+        padding: 0.8rem 8rem;
+        height: 14rem;
+    }
+    
+    .home-content {
+        font-size: 0.6rem;
+    }
+
+    #random_bg {
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        height: 22rem;
+    }
+
+    .primary-heading {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+/* Menu Section */
+    .menu_images {
+        grid-template-columns: repeat(2, auto);
+        gap: 0.3rem;
+    }  
+    
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        width: 14rem;
+        margin: 0.6rem;   
+    }
+
+/* Services section */  
+
+    .secondry-heading {
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+
+    .box{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+    }
+
+    .box #dine-in {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'dine_in_image dine_in_heading'
+        'dine_in_image dine_in_content';
+    }
+
+    #dine_in_image{
+        /* border: 1px solid red; */
+        grid-area: dine_in_image;
+    }
+    #dine_in_heading{
+        /* border: 1px solid red; */
+        grid-area: dine_in_heading;
+    }
+    #dine_in_content{
+        /* border: 1px solid red; */
+        grid-area: dine_in_content;
+    }
+
+    .box #take-away {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'take_away_image take_away_heading'
+        'take_away_image take_away_content';
+    }
+    #take_away_image{
+        /* border: 1px solid red; */
+        grid-area: take_away_image ;
+    }
+    #take_away_heading{
+        /* border: 1px solid red; */
+        grid-area: take_away_heading ;
+    }
+    #take_away_content{
+        /* border: 1px solid red; */
+        grid-area: take_away_content ;
+    }
+
+    .box #home-delivery {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'home_delivery_image home_delivery_heading'
+        'home_delivery_image home_delivery_content';
+    }
+    #home_delivery_image{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_image ;
+    }
+    #home_delivery_heading{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_heading ;
+    }
+    #home_delivery_content{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_content ;
+    }
+
+
+    .box #dine-in,
+    .box #take-away,
+    .box #home-delivery {
+        margin: 0.2rem;
+        width: 90%;
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    #services #dine-in img,
+    #services #take-away img,
+    #services #home-delivery img {
+        height: 6rem;
+        width: 6rem;
+        display: inline;
+        margin: 1rem;
+    }
+
+    #services{
+        /* border: 1px solid red; */
+        font-size: 0.65rem;
+        margin-bottom: 1rem;
+    }
+
+/* Contact Us Section  */
+    .contact #name,
+    .contact #email {
+        height: 1.7rem;
+        width: 27rem;
+    }
+
+    .contact #name,
+    .contact #email,
+    .contact #suggestion,
+    .contact #submit,
+    .contact #reset {
+        margin: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .contact #suggestion{
+        width: 27rem;
+        height: 5.8rem;
+    }
+
+    .contact #reset,
+    .contact #submit {
+        padding: 5px;
+        width: 12.9rem;
+    }
+
+    /* Order Now button */
+    #ordernow {
+        bottom: 1.5rem;
+        right: -10px;
+        height: 2rem;
+        width: 5rem;
+        font-size: 0.6rem;
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+
+@media only screen and (max-width: 570px){
+   
+    html {
+        scroll-padding-top: 3rem;
+    }
+
+    header {
+        margin-top: 0;
+        position: sticky;
+        top: 0;
+        display: flex;
+        z-index: 1000;
+    }
+/* logo image  */
+    #logo img {
+        margin: 0.5rem 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+/* navigation bar */
+    #navbar {
+        border-radius: 0.5rem;
+        height: 3rem;
+        justify-content: center;
+        /* padding-top: 0; */
+    }
+
+    #navbar ul li {
+        padding: 0.5rem;
+        /* padding-top: 1151rem; */
+    }
+
+    #navbar ul li a {
+        font-size: 0.5rem;
+    }
+    
+/* Home Section */
+    .home-container {
+        height: 19rem;
+    }
+
+    #home {
+        padding: 0.1rem 1rem;
+        height: 14rem;
+    }
+    
+    .home-content {
+        font-size: 0.6rem;
+    }
+
+    #random_bg {
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        height: 22rem;
+    }
+
+    .primary-heading {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    
+/* Menu Section */
+    .menu_images {
+        grid-template-columns: repeat(1, auto);
+        gap: 0.1rem;
+    }  
+    
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        width: 11rem;
+        margin: 0.1rem;   
+    }
+
+/* Services section */  
+
+    .secondry-heading {
+        /* border: 2px solid red; */
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+    }
+
+    .box{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+    }
+
+    .box #dine-in {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'dine_in_image dine_in_heading'
+        'dine_in_image dine_in_content';
+    }
+
+    #dine_in_image{
+        /* border: 1px solid red; */
+        grid-area: dine_in_image;
+    }
+    #dine_in_heading{
+        /* border: 1px solid red; */
+        grid-area: dine_in_heading;
+    }
+    #dine_in_content{
+        /* border: 1px solid red; */
+        grid-area: dine_in_content;
+    }
+
+    .box #take-away {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'take_away_image take_away_heading'
+        'take_away_image take_away_content';
+    }
+    #take_away_image{
+        /* border: 1px solid red; */
+        grid-area: take_away_image ;
+    }
+    #take_away_heading{
+        /* border: 1px solid red; */
+        grid-area: take_away_heading ;
+    }
+    #take_away_content{
+        /* border: 1px solid red; */
+        grid-area: take_away_content ;
+    }
+
+    .box #home-delivery {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        'home_delivery_image home_delivery_heading'
+        'home_delivery_image home_delivery_content';
+    }
+    #home_delivery_image{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_image ;
+    }
+    #home_delivery_heading{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_heading ;
+    }
+    #home_delivery_content{
+        /* border: 1px solid red; */
+        grid-area: home_delivery_content ;
+    }
+
+
+    .box #dine-in,
+    .box #take-away,
+    .box #home-delivery {
+        margin: 0.2rem;
+        width: 80%;
+        height: 8rem;
+        padding: 0.5rem;
+    }
+
+    #services #dine-in img,
+    #services #take-away img,
+    #services #home-delivery img {
+        height: 3.5rem;
+        width: 3.5rem;
+        display: inline;
+        margin: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    #services{
+        /* border: 1px solid red; */
+        font-size: 0.4rem;
+        margin-bottom: 1rem;
+    }
+
+/* Contact Us Section  */
+    #contactUs {
+        border-radius: 1rem;
+    }
+    .contact #name,
+    .contact #email {
+        height: 1rem;
+        width: 10rem;
+    }
+
+    .contact #name,
+    .contact #email,
+    .contact #suggestion,
+    .contact #submit,
+    .contact #reset {
+        margin: 0.3rem;
+        font-size: 0.5rem;
+    }
+
+    .contact #suggestion{
+        border-radius: 1rem;
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .contact #reset,
+    .contact #submit {
+        padding: 3px;
+        width: 4.7rem;
+    }
+
+    /* Order Now button */
+    #ordernow {
+        border: 1px solid rgb(240, 224, 132);
+        border-radius: 50%;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        height: 2rem;
+        width: 2rem;
+        font-size: 0.3rem;
+    }
+
+    footer {
+        font-size:0.4rem;
+    }
+}
